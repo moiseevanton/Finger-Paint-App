@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PaintView.h
 //  Finger Paint App
 //
 //  Created by Anton Moiseev on 2016-05-13.
@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Line.h"
+#import "LineSegment.h"
 
-@interface ViewController : UIViewController
+@interface PaintView : UIView
+
+@property NSMutableArray *listOfLines;
+
+@property Line *line;
 
 @end
-

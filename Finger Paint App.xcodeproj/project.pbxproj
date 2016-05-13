@@ -13,6 +13,9 @@
 		E976BD8D1CE64F9000970FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E976BD8B1CE64F9000970FC4 /* Main.storyboard */; };
 		E976BD8F1CE64F9000970FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E976BD8E1CE64F9000970FC4 /* Assets.xcassets */; };
 		E976BD921CE64F9000970FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E976BD901CE64F9000970FC4 /* LaunchScreen.storyboard */; };
+		E976BD9B1CE6553B00970FC4 /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = E976BD9A1CE6553B00970FC4 /* PaintView.m */; };
+		E976BD9E1CE65C6300970FC4 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = E976BD9D1CE65C6300970FC4 /* Line.m */; };
+		E976BDA11CE66BF100970FC4 /* LineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = E976BDA01CE66BF100970FC4 /* LineSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		E976BD8E1CE64F9000970FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E976BD911CE64F9000970FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E976BD931CE64F9000970FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E976BD991CE6553B00970FC4 /* PaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintView.h; sourceTree = "<group>"; };
+		E976BD9A1CE6553B00970FC4 /* PaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
+		E976BD9C1CE65C6300970FC4 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		E976BD9D1CE65C6300970FC4 /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
+		E976BD9F1CE66BF100970FC4 /* LineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineSegment.h; sourceTree = "<group>"; };
+		E976BDA01CE66BF100970FC4 /* LineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineSegment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				E976BD901CE64F9000970FC4 /* LaunchScreen.storyboard */,
 				E976BD931CE64F9000970FC4 /* Info.plist */,
 				E976BD821CE64F9000970FC4 /* Supporting Files */,
+				E976BD991CE6553B00970FC4 /* PaintView.h */,
+				E976BD9A1CE6553B00970FC4 /* PaintView.m */,
+				E976BD9C1CE65C6300970FC4 /* Line.h */,
+				E976BD9D1CE65C6300970FC4 /* Line.m */,
+				E976BD9F1CE66BF100970FC4 /* LineSegment.h */,
+				E976BDA01CE66BF100970FC4 /* LineSegment.m */,
 			);
 			path = "Finger Paint App";
 			sourceTree = "<group>";
@@ -149,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E976BD9E1CE65C6300970FC4 /* Line.m in Sources */,
+				E976BDA11CE66BF100970FC4 /* LineSegment.m in Sources */,
 				E976BD8A1CE64F9000970FC4 /* ViewController.m in Sources */,
+				E976BD9B1CE6553B00970FC4 /* PaintView.m in Sources */,
 				E976BD871CE64F9000970FC4 /* AppDelegate.m in Sources */,
 				E976BD841CE64F9000970FC4 /* main.m in Sources */,
 			);
@@ -264,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Finger Paint App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moiseevanton.Finger-Paint-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Finger Paint App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moiseevanton.Finger-Paint-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
